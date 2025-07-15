@@ -1,7 +1,7 @@
 # Glitchverse
-# GlitchQuest
 
-GlitchQuest is a web-based interactive puzzle game that blends education and challenge. It places the player—cast as a computer science student—inside a distorted, corrupted digital environment where progress is made by solving technical puzzles and navigating intentionally broken user experiences. Designed to be both engaging and intellectually stimulating, GlitchQuest is ideal for CS students and enthusiasts.
+
+GlitchVerse is a web-based interactive puzzle game that blends education and challenge. It places the player—cast as a computer science student—inside a distorted, corrupted digital environment where progress is made by solving technical puzzles and navigating intentionally broken user experiences. Designed to be both engaging and intellectually stimulating, GlitchVerse is ideal for CS students and enthusiasts.
 
 
 ---
