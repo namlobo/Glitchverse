@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
@@ -13,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.error("MongoDB Error", err));
 
 // Routes
-app.use("/api/auth", require("./routes/authRoutes")); // placeholder
+app.use("/api/auth", require("./routes/authRoutes")); 
 
 app.listen(5000, () => {
   console.log("Backend running on http://localhost:5000");
