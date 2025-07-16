@@ -1,12 +1,21 @@
-import React,{useEffect,useState} from "react";
+import React from "react";
+import gsap from "gsap";
 import './homepage.css';
+import FuzzyText from "./FuzzyText"; // Adjust path if needed
+
 function Homepage() {
   return (
-    <div>
-      <h1>Homepage</h1>
+    <div className="homepage-container">
+      <FuzzyText 
+        baseIntensity={0.2} 
+        hoverIntensity={0.5} 
+        enableHover={true}
+      >
+        GlitchVerse
+      </FuzzyText>
+      <h2 className="homepage-subtitle">Escape the corrupted digital world</h2>
     </div>
   );
 }
 
 export default Homepage;
-
