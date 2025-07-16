@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/Homepage';
-import { Routes, Route } from 'react-router-dom';
+import Signup from './pages/Signup';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Routes>
-          <Route path="/" element={<Homepage/>}></Route>
+          {/* <Route path="/" element={<Homepage/>}></Route> */}
+          <Route path="/signup" element={<Signup />} />
+
         </Routes>
       </header>
     </div>
