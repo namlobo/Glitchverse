@@ -30,6 +30,7 @@ function Login() {
             const data = await res.json();
 
             if (res.ok) {
+                console.log("TOKEN:", data.token);
                 localStorage.setItem("token", data.token); // save JWT token
                 navigate("/home"); // go to home page on success
             } else {
