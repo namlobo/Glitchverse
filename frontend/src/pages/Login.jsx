@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
+import Cubes from '../components/Cubes';
+
 
 function Login() {
     const [step, setStep] = useState(1);
@@ -38,7 +41,17 @@ function Login() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <>
+        <div className="retro-wrapper">
+            <Cubes />
+        <div className="retro-window">
+            <div className="window-header">
+                <span className="dot red" />
+                <span className="dot yellow" />
+                <span className="dot green" />
+            </div>
+        <form className="login-form" onSubmit={handleSubmit}>
+        <h2 className="title">Login</h2>
             {step === 1 && (
                 <input
                     type="text"
@@ -70,6 +83,9 @@ function Login() {
                 </button>
             )}
         </form>
+        </div>
+        </div>
+        </>
     );
 }
 
