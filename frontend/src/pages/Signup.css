@@ -1,0 +1,85 @@
+
+/* Signup.css */
+
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #222222;
+}
+
+.retro-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retro-window {
+  background-color: #c2d9c4;
+  border: 2px solid #888;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 10px #000;
+}
+
+.window-header {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background-color: #b0c9b0;
+  border-bottom: 2px solid #888;
+  border-radius: 10px 10px 0 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca56;
+}
+
+.signup-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form .title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.signup-form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signup-form button {
+  background-color: #222222;
+  color: #c2d9c4;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-form button:hover {
+  background-color: #333;
+}
