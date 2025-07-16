@@ -1,0 +1,15 @@
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(90, 63, 231, 0.7);
+  box-shadow: 0 0 8px 4px rgba(90, 63, 231, 0.5);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
