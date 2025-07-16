@@ -4,3 +4,22 @@
 .homepage-subtitle{
     font-size: 1rem;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.start-button {
+  margin-top: 5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgb(90, 63, 231);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #5a3fe7, 0 0 30px #5a3fe7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #11df88, 0 0 30px #11df88;
+  background: #11df88;
+}

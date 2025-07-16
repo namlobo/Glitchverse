@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import './homepage.css';
-import FuzzyText from "./FuzzyText"; // Adjust path if needed
+import FuzzyText from "../components/FuzzyText"; // Adjust path if needed
 import './cursor.css';
 
 function Homepage() {
@@ -26,9 +26,9 @@ function Homepage() {
         GlitchVerse
       </FuzzyText>
       <h2 className="homepage-subtitle">The system wants you to fail. Prove it wrong.</h2>
+      <button className="start-button">Start Game</button>
     </div>
   );
 }
 
 export default Homepage;
-
