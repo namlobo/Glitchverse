@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './Signup.css';
+import Cubes from '../components/Cubes';
+
+
 
 const Signup = () => {
     const [form, setForm] = useState({
@@ -25,7 +28,9 @@ const Signup = () => {
     };
 
     return (
+        <>
         <div className="retro-wrapper">
+            <Cubes />
       <div className="retro-window">
         <div className="window-header">
           <span className="dot red" />
@@ -58,6 +63,7 @@ const Signup = () => {
         </form>
       </div>
         </div>
+        </>
         // <form onSubmit={handleSubmit}>
         //     <input name="username" placeholder="Username" onChange={handleChange} required />
         //     <input name="email" placeholder="Email" onChange={handleChange} required />

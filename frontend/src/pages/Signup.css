@@ -1,11 +1,13 @@
 
 /* Signup.css */
 
-body {
+/* body {
   margin: 0;
   font-family: 'Courier New', monospace;
-  background-color: #222222;
+  background-color: #000;
+  
 }
+
 
 .retro-wrapper {
   height: 100vh;
@@ -82,4 +84,122 @@ body {
 
 .signup-form button:hover {
   background-color: #333;
+} */
+
+/* Signup.css */
+
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: 'Orbitron', sans-serif; /* futuristic font */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Import Orbitron font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+.retro-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retro-window {
+  background: rgba(17, 223, 136, 0.1); /* semi-transparent neon green */
+  border: 2px dotted #5a3fe7;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 20px #5a3fe7, 0 0 40px;
+  backdrop-filter: blur(6px);
+  position: absolute;
+  z-index: 2;
+}
+
+.window-header {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background-color: #111;
+  border-bottom: 2px solid #5a3fe7;
+  border-radius: 10px 10px 0 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca56;
+}
+
+.signup-form {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.signup-form .title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #11df88;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.signup-form .title:hover {
+  color: #11df88;
+  text-shadow: 0 0 5px #5a3fe7, 0 0 10px #5a3fe7, 0 0 20px #5a3fe7;
+  transition: text-shadow 0.3s ease;
+}
+
+.signup-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #5a3fe7;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #111;
+  color: #11df88;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #11df88;
+  box-shadow: 0 0 5px #11df88;
+}
+
+.signup-form button {
+  background-color: #5a3fe7;
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #5a3fe7, 0 0 20px #5a3fe7;
+  transition: 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #11df88;
+  color: #000;
+  box-shadow: 0 0 15px #11df88, 0 0 30px #11df88;
 }
