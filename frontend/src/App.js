@@ -1,20 +1,28 @@
-// import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/Homepage';
-import { Routes, Route } from 'react-router-dom';
-
+import Login from './pages/Login';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+  const isHomepage = location.pathname === '/homepage';
+
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      {isHomepage ? (
+        <header className="App-header">
+          <Routes>
+            <Route path="/homepage" element={<Homepage />} />
+          </Routes>
+        </header>
+      ) : (
         <Routes>
-          <Route path="/" element={<Homepage/>}></Route>
+          <Route path="/" element={<Login />} />
         </Routes>
-      </header>
+      )}
     </div>
   );
 }
 
 export default App;
+
