@@ -34,6 +34,7 @@ function Login() {
 
             if (res.ok) {
                 login(data.token); // use AuthContext login() // save JWT token
+                console.log("TOKEN:", data.token);
                 navigate("/home"); // go to home page on success
             } else {
                 alert(data.message); // show error message from backend
