@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.2rem;
+  max-width: 100vw;
+overflow: hidden;
+  height: 100vh;
+  padding: 2px;
+  margin-left: 2.7%;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.grid-item {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.1%;
+}
+
+.grid-item img {
+  width: 70%;
+  height: 70%;
+  margin-top: 0;
+  object-fit: contain;
+  display: block;
+}
+
+.grid-item img:hover {
+  box-shadow: 0 0 10px #6aebda, 0 0 10px #6aebda;
+}
+.clue{
+  color: white;
+  font-size: larger;
+}
