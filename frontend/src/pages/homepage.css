@@ -1,9 +1,11 @@
 .body{
     background-color: #000000;
-}
+align-self: center;}
 .homepage-subtitle{
     font-size: 1rem;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#fff;
+}
 
 .start-button {
   margin-top: 5rem;
@@ -25,4 +27,45 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 .homepage-subtitle{
   color: #fff;
+}
+
+/* .logout-button {
+  margin-top: 5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgb(90, 63, 231);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #5a3fe7, 0 0 30px #5a3fe7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logout-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #11df88, 0 0 30px #11df88;
+  background: #11df88;
+} */
+
+.logout-button {
+  position: absolute;             /* 👈 Take it out of normal flow */
+  top: 1.5rem;                    /* 👈 Distance from top */
+  right: 2rem;                    /* 👈 Distance from right */
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgb(90, 63, 231);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #5a3fe7, 0 0 30px #5a3fe7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 10;                    /* 👈 Make sure it stays above background elements */
+}
+
+.logout-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #11df88, 0 0 30px #11df88;
+  background: #11df88;
 }

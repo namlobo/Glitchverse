@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import './homepage.css';
-import FuzzyText from "../components/FuzzyText"; // Adjust path if needed
+import FuzzyText from "./FuzzyText"; // Adjust path if needed
+import { useAuth } from "../context/authContext";
+import { useNavigate } from "react-router-dom";
+
 import './cursor.css';
 
 function Homepage() {
@@ -14,6 +17,15 @@ function Homepage() {
     document.addEventListener("mousemove", move);
     return () => document.removeEventListener("mousemove", move);
   }, []);
+  const { logout } = useAuth(); // ✅ extract logout from context
+  const navigate = useNavigate(); // ✅ initialize navigate hook
+
+
+  const handleLogout = () => {
+    logout();             // Clear auth state
+    navigate("/");   // Redirect to login page
+  };
+
 
   return (
     <div className="homepage-container">
@@ -26,9 +38,12 @@ function Homepage() {
         GlitchVerse
       </FuzzyText>
       <h2 className="homepage-subtitle">The system wants you to fail. Prove it wrong.</h2>
-      <button className="start-button">Start Game</button>
+      <button className="start-button">Start</button>
+      <button className="logout-button" onClick={handleLogout}>Logout</button>
+
     </div>
   );
 }
 
 export default Homepage;
+

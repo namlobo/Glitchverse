@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import { useAuth } from '../context/authContext';
 import Cubes from '../components/Cubes';
 
 
@@ -12,6 +13,8 @@ function Login() {
     const [formData, setFormData] = useState({ username: '', password: '' });
     const navigate = useNavigate();
     // hook for redirecting to another route after login
+    const { login } = useAuth();
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -30,8 +33,8 @@ function Login() {
             const data = await res.json();
 
             if (res.ok) {
+                login(data.token); // use AuthContext login() // save JWT token
                 console.log("TOKEN:", data.token);
-                localStorage.setItem("token", data.token); // save JWT token
                 navigate("/home"); // go to home page on success
             } else {
                 alert(data.message); // show error message from backend

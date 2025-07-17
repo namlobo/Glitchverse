@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import './Signup.css';
 import Cubes from '../components/Cubes';
@@ -6,6 +7,7 @@ import Cubes from '../components/Cubes';
 
 
 const Signup = () => {
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         username:'',
         email:'',
@@ -21,6 +23,8 @@ const Signup = () => {
         try {
             const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/register`,form);
             alert(res.data.message);
+            navigate("/home");
+
 
         } catch(err){
             alert(err.response?.data?.message || "Error occured");
