@@ -1,7 +1,6 @@
 import './App.css';
 import ImageGrid from './components/Game/MultiCursor';
-// import Homepage from './pages/Homepage';
-// import Login from './pages/Login';
+
 
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
@@ -28,6 +27,7 @@ function App() {
             <Routes>
               <Route path="/home" element={<Homepage />} />
               <Route path="/homepage" element={<Homepage />} />
+      <Routes>*/}
       <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
@@ -35,10 +35,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/level1" element={<Level1 />} />
           <Route path="/typing" element={<TypingSwap />} />
-          {/* <Route path="/signup" element={<Signup />} /> */}
-            </Routes>
-          </header>
-        ) : ( */}
+         </Routes> 
         <Routes>
           <Route path="/" element={<ImageGrid />} />
           {/* <Route path="/login" element={<Login />} /> */}
@@ -48,7 +45,7 @@ function App() {
       </div>
     </AuthProvider>
   );
-}
+};
 
 export default App;
 
