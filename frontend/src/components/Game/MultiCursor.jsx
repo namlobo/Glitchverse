@@ -95,7 +95,7 @@ export default function MultiCursor() {
           onChange={(e) => setValue(e.target.value)}
         />
       </div>
-      
+      <div className="scroll-wrapper">
       <div className="grid-container">
         {images.map((image) => (
           <button key={image.id} className="grid-item" onClick={() => handleClick(image.id)}>
@@ -103,7 +103,7 @@ export default function MultiCursor() {
           </button>
         ))}
       </div>
-        
+      </div>
       {fakeCursors.map((cursor, idx) => (
         <Mirror key={idx} x={cursor.x} y={cursor.y} />
       ))}
