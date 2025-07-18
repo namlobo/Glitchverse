@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import './homepage.css';
-import FuzzyText from "./FuzzyText"; // Adjust path if needed
+import FuzzyText from "../components/FuzzyText.js"; // Adjust path if needed
 import { useAuth } from "../context/authContext";
 import { useNavigate } from "react-router-dom";
 

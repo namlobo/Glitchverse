@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: black;
+}
