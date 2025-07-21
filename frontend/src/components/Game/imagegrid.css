@@ -35,8 +35,8 @@ body {
 }
 
 .grid-item {
-  background-color: #111;
-  border: 2px solid #5a3fe7;
+  background-color: #000;
+  border: 2px solid #000;
   padding: 10px;
   transition: transform 0.2s ease;
 }
