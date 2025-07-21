@@ -89,18 +89,32 @@ const TypingTest = ({ onComplete}) => {
 
     return(
         <div className="typing-test-container" onClick={() => inputRef.current.focus()}>
-            <h2 className="test-title">Typing Test</h2>
+            <h2 className="test-title">WPM.exe</h2>
             <div className="timer">Time Left: {timeLeft}s</div>
             <div className="text-disp scrollable-text">{renderText()}</div>
 
             <input type="text" value={typedText} onChange={handleChange} ref={inputRef} className="hidden-input" autoComplete="off" />
-            <div className="keyboard-placeholder">On-screen keyboard will appear here (Swapped Keys View)</div>
+<div className="keyboard-placeholder">
+  <div className="keyboard-row row1">
+    <span>Q</span><span>W</span><span>E</span><span>R</span><span>T</span><span>Y</span><span>U</span><span>I</span><span>O</span><span>P</span>
+  </div>
+  <div className="keyboard-row row2">
+    <span>A</span><span>S</span><span>D</span><span>F</span><span>G</span><span>H</span><span>J</span><span>K</span><span>L</span>
+  </div>
+  <div className="keyboard-row row3">
+    <span>Z</span><span>X</span><span>C</span><span>V</span><span>B</span><span>N</span><span>M</span>
+  </div>
+</div>
+
+
+
+
             
             
             {showPopup && (
         <div className="popup">
           <div className="popup-content">
-            🎉 Great job!<br />
+            Great job!<br />
             Your WPM: <strong>{wpm}</strong>
             <br />
             <button onClick={() => window.location.reload()}>Retry</button>
